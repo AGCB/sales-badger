@@ -1,0 +1,121 @@
+.mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.mission-header {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.mission-body > span {
+  margin-bottom: 70px;
+}
+
+.mission-statements {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.mission-statements > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 30%;
+  margin: 0px 10px;
+}
+
+.mission-image {
+  width: 50px;
+}
+
+.mission-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+  margin-bottom: 70px;
+}
+
+.mission-body-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin: 10px 0px;
+}
+
+.mission-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-footer-text {
+  margin-bottom: 20px;
+}
+
+.mission-footer > button {
+  margin-bottom: 50px;
+  border-radius: 5px;
+  background-color: rgb(0,200,220);
+  color: white;
+  width: 150px;
+  height: 40px;
+  border: 0px;
+}
+
+@media only screen and (max-width: 320px) {
+  .mission {
+    align-items: flex-start;
+    margin-left: 15px;
+  }
+
+  .mission-body {
+    align-items: flex-start;
+  }
+
+  .mission-statements {
+    flex-direction: column;
+  }
+
+  .mission-statements > div {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .mission-body-text {
+    width: 260%;
+  }
+
+  .mission-footer {
+    width: 80%;
+  }
+
+  .mission-footer > button {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mission-body > span {
+    max-width: 65%;
+    text-align: center;
+    line-height: 22px;
+  }
+
+  .mission-footer {
+    margin-left: 15px;
+  }
+
+  .mission-statements > div {
+    min-width: 50px;
+  }
+  .mission-body-heading {
+    font-size: 15px;
+  }
+}
