@@ -1,0 +1,65 @@
+.offices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.offices-header {
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.offices-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding-right: 20%;
+}
+
+.office {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 295px;
+  margin-bottom: 40px;
+  background-color: white;
+  border: 1px solid #f1f1f1;
+  z-index: 99;
+}
+
+.office-blurred-border {
+  border: 3px solid grey;
+  width: 80%;
+  height: 280px;
+  filter: blur(8px);
+  opacity: .5;
+  position: relative;
+  left: 25%;
+  top: 7px;
+}
+
+.office-image {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.office-header {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.office-address-one {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .offices-list {
+    margin-left: 10px;
+  }
+}
