@@ -1,0 +1,46 @@
+.future {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(108, 125, 255);
+}
+
+.future-heading {
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+.future-button-wrapper {
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  padding-left: 50%;
+}
+
+.future-button {
+  margin: 10px;
+  width: 20%;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .future-button {
+    width: 30%;
+  }
+  .future-button-wrapper {
+    padding-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 373px) {
+  .future-button.two {
+    position: relative;
+    bottom: 8px;
+  }
+}

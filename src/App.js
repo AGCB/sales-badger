@@ -6,7 +6,9 @@ import AboveTheFold from './components/AboveTheFold';
 import Mission from './components/Mission';
 import Progress from './components/Progress';
 import Offices from './components/Offices';
-import Investors from './components/Investors'
+import Investors from './components/Investors';
+import Future from './components/Future';
+import Footer from './components/Footer';
 //
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Progress />
       <Offices />
       <Investors />
+      <Future />
+      <Footer />
     </div>
   );
 }
