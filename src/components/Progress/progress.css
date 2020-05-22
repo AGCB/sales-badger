@@ -32,7 +32,6 @@
   display: flex;
   margin-bottom: 40px;
   z-index: 3;
-  border: 1px solid blue;
 }
 
 .year {

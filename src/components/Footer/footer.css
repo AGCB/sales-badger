@@ -1,8 +1,8 @@
 .footer {
-  width: 100%;
+  width: 98.4vw;
   height: 500px;
-  margin-top: -50px;
 }
+
 
 .footer-icon {
   width: 30px;
@@ -12,29 +12,33 @@
   top: 10px;
 }
 .footer-top {
-  padding-top: 80px;
-  height: 80%;
   display: flex;
-  justify-content: space-evenly;
+
 }
 
 .footer-top-left {
   display: flex;
-  padding-left: 10px;
 }
 
 .footer-top-right {
-  width: 70%;
-
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  flex-wrap: wrap;
 }
 
 .columns {
   display: flex;
-  justify-content: space-evenly;
-  height: 100%;
+  flex-wrap: wrap;
+}
+
+.columns > li {
+  list-style-type: none;
 }
 
 .columns-heading {
+  list-style-type: none;
 }
 
 .column-heading {
@@ -45,47 +49,73 @@
 }
 
 .column-list > li {
-  position: relative;
-  right: 25%;
+  list-style-type: none;
 }
 
 .footer-bottom {
-  height: 250px;
-  margin-top: -70px;
   background-color: rgb(229, 229, 229);
 }
 
 .footer-bottom-top {
-  display: block;
-  margin-bottom: 20px;
-  margin-top: 40px;
-
+  padding-left: 35px;
 }
 .footer-bottom-privacy-terms {
-  display: flex;
   font-weight: bold;
-  padding-left: 4%;
+  display: flex;
+
 }
 
 .footer-bottom-privacy-terms > span {
-  margin: 50px 10px;
 }
 
 .social-links {
-display: flex;
-flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-row-reverse;
+  justify-content: flex-end;
 }
 
 .social-links > img {
   width: 40px;
   height: 40px;
-  position: relative;
-  right: 5%;
-  bottom: 75px;
   margin: 0px 5px 0px 5px;
 }
 
 .copywrite {
   height: 100px;
   padding-left: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    width: 100vw;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-links {
+    justify-content: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .copywrite {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .footer-bottom-privacy-terms {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }

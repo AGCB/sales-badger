@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: rgb(108, 125, 255);
+  width: 98vw;
 }
 
 .future-heading {
@@ -12,10 +13,10 @@
 }
 
 .future-button-wrapper {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
-  width: 100%;
-  padding-left: 50%;
+  width: 50%;
 }
 
 .future-button {
@@ -40,7 +41,8 @@
 
 @media only screen and (max-width: 373px) {
   .future-button.two {
-    position: relative;
-    bottom: 8px;
+  }
+  .future-button-wrapper {
+    font-size: 10px;
   }
 }
